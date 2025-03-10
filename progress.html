@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker | Boostcamp</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="homepage.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay for better readability -->
+    <div class="overlay"></div>
+    <header>
+        <h1>Boostcamp Progress Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workout.html">Workout Plans</a></li>
+                <li><a href="progress.html" class="active">Progress Tracker</a></li>
+                <li><a href="calorie.html">Calorie Calculator</a></li>
+                <li><a href="premium.html" class=>Premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Track Your Progress</h2>
+        <form id="progress-form">
+            <input type="date" id="date" required>
+            <input type="text" id="workout" placeholder="Workout Type (e.g., Squat)" required>
+            <input type="number" id="sets" placeholder="Sets" required>
+            <input type="number" id="reps" placeholder="Reps per Set" required>
+            <button type="submit">Add Workout</button>
+        </form>
+
+        <h2>Workout History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Workout</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="progress-list"></tbody>
+        </table>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>

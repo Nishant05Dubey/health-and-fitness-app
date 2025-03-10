@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises | Boostcamp</title>
+    <link rel="stylesheet" href="exercises.css">
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="homepage.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay for better readability -->
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Boostcamp Fitness</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html" class="active">Workout Plans</a></li>
+                <li><a href="progress.html">Progress Tracker</a></li>
+                <li><a href="calorie.html">Calorie Calculator</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="workout-title">Loading Workout...</h2>
+        <div id="exercise-list"></div>
+    </main>
+
+    <script src="exercises.js"></script>
+</body>
+</html>
